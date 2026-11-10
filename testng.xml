@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SmokeTestSuite" parallel="tests" thread-count = "3">
+<!--  1. Chrome Smoke Execution  -->
+<test name="Smoke-Chrome">
+<parameter name="browser" value="chrome"/>
+<groups>
+<run>
+<!-- <include name="smoke"/> -->
+</run>
+</groups>
+<classes>
+<class name="Tests.BaseFile"/>
+<class name="Tests.ContactTest"/>
+</classes>
+</test>
+
+
+
+<!--  2. Firefox Smoke Execution  
+<test name="Smoke-Firefox">
+<parameter name="browser" value="firefox"/>
+<groups>
+<run>
+ <include name="smoke"/> 
+</run>
+</groups>
+<classes>
+<class name="Tests.BaseFile"/>
+<class name="Tests.ContactTest"/>
+</classes>
+</test>
+-->
+
+<!--   3. IE Smoke Execution  -->
+<test name="Smoke-IE">
+<parameter name="browser" value="ie"/>
+<groups>
+<run>
+<!-- <include name="smoke"/> -->
+</run>
+</groups>
+<classes>
+<class name="Tests.BaseFile"/>
+<class name="Tests.ContactTest"/>
+</classes>
+</test>
+
+
+</suite>
